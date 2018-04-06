@@ -2,7 +2,7 @@
 
 __version__ = '0.1.0'
 
-__title__ = 'cacophony-reverse-plugin'
+__title__ = 'cacophony-plugin-reverse'
 __summary__ = "Example plugin that reverses a string after a discord command."
 __uri__ = 'http://github.com/cacophony-discord/reverse'
 

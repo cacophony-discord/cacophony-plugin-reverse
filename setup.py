@@ -25,7 +25,8 @@ INSTALL_REQUIRES = [
 
 PROJECT_DIR = dirname(__file__)
 README_FILE = join(PROJECT_DIR, 'README.rst')
-ABOUT_FILE = join(PROJECT_DIR, 'src', 'reverse', '__about__.py')
+ABOUT_FILE = join(PROJECT_DIR, 'src', 'cacophony', 'plugins', 'reverse',
+                  '__about__.py')
 
 
 def get_readme():
@@ -55,15 +56,7 @@ setup(
     keywords=KEYWORDS,
     classifiers=CLASSIFIERS,
     package_dir={'': 'src'},
-    packages=find_packages('src'),
-    entry_points={
-        'console_scripts': [
-            'cacophony-reverse=reverse.__main__:main',
-        ],
-        'cacophony.plugins': [
-            'reverse=reverse',
-        ],
-    },
+    packages=['cacophony.plugins.reverse'],
     install_requires=INSTALL_REQUIRES,
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4',
     zip_safe=False,
