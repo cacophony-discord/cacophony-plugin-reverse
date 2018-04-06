@@ -13,7 +13,6 @@ __all__ = [
     '__title__',
     '__uri__',
     '__version__',
-    'hello',
 ]
 
 commands = {

@@ -19,6 +19,7 @@ CLASSIFIERS = [
     'Topic :: Utilities',
 ]
 INSTALL_REQUIRES = [
+    'cacophony>=0.1',
     'click',
 ]
 
